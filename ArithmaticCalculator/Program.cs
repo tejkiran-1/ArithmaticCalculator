@@ -8,12 +8,13 @@ namespace ArithmaticCalculator
         static void Main()
         {
 
-            Calculator calc = new Calculator();
-
-            calc.DisplayResult(1, "plus", 2);
-            calc.DisplayResult(1, "minus", 2);
-            calc.DisplayResult(1, "mod", 2);
-            calc.DisplayResult(1, "Tejkiran", 2);
+            var calc = new Calculator();
+            double result;
+            calc.DisplayResult(1, "plus", 2, out result);
+            calc.DisplayResult(1, "minus", 2, out result);
+            calc.DisplayResult(1, "mod", 2, out result);
+            calc.DisplayResult(1, "Tejkiran", 2, out result);
+            calc.DisplayResult(1, "plus", 2, out result);
 
             Console.ReadLine();
 
